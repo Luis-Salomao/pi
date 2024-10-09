@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Beerze - Cassino de Cervejas</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+  <style>
+    .fade {
+      opacity: 0;
+      transition: opacity 0.5s ease-in-out;
+    }
+
+    .visible {
+      opacity: 1;
+    }
+  </style>
+</head>
+<body>
+  <div class="titulo">
+    <div class="tit1">
+      <h1>Beerze.com</h1>
+      <div class="img">
+        <img src="beer-bottle-4b7cc7-Photoroom.png" alt="">
+      </div>
+    </div>
+    <div class="tit2">
+      <button id="deposit-button">Depositar</button>
+    </div>
+  </div>
+  
+  <div class="container">
+    <div id="user-info">
+      <h2>Bem-vindo <span id="user-name"></span>!</h2>
+      <p id="user-balance">Saldo: R$48.00</p>
+      <p id="profit">Lucro/Prejuízo Total: R$0.00</p>
+    </div>
+  
+    <div class="cerveja">
+      <div class="coluna-imagem">
+        <img src="3dde962e-36ef-4261-9f2e-65f775c577df-2303dd782629f176b816565819639112-480-0-Photoroom.png" alt="">
+      </div>
+    
+      <div class="coluna-informacoes" id="beer-container">
+        <button id="release-beer-button">Liberar Cerveja - R$ 12.00</button>
+        <div class="beer-info fade">
+          <h2>Cerveja Artesanal</h2>
+          <p id="beer-name">Carregando cerveja...</p>
+          <p id="beer-price">Carregando preço...</p>
+          <p id="beer-rating">Carregando classificação...</p>
+          <img id="beer-image" src="" alt="Imagem da Cerveja" style="max-width: 200px; display: block; margin-top: 10px;">
+        </div>
+      </div>
+    </div>
+    
+  </div>
+  
+  <div id="myModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>pix Depósito</h2>
+      <img src="download.png" alt="Imagem do Depósito"> 
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>

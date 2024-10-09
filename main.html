@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Página de Login</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@blaze-ui/blaze@3.10.4/dist/blaze.min.css">
+  <link rel="stylesheet" href="style-log.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="titulo">
+    <h1>Beerze.com</h1>
+    <div class="img"> <img src="beer-bottle-4b7cc7-Photoroom.png" alt=""></div>
+   
+  </div>
+  
+  <div class="c-card u-highest">
+    <div class="c-card__header"></div>
+    <div class="c-card__body">
+      <form id="login-form" onsubmit="handleLogin(event)">
+        <div class="c-input-group">
+          <label for="name" class="c-input-group__label">Nome:</label>
+          <input type="text" id="name" class="c-field" placeholder="Digite seu nome" required>
+        </div>
+        <button type="submit" class="c-button c-button--brand">Entrar</button>
+      </form>
+    </div>
+  </div>
+
+ 
+  <div id="dad-joke-container" style="margin-top: 20px;">
+    <p id="dad-joke">Carregando piada...</p>
+    <p id="dad-joke-translated" style="font-size: 0.9em; font-style: italic;">Traduzindo...</p>
+  </div>
+
+  <script src="log.js"></script>
+</body>
+</html>
